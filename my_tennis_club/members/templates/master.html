@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .member-item {
+            background: #f8f9fa;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .member-item:hover {
+            background: #e9ecef;
+            transform: translateY(-2px);
+        }
+
+        .member-link {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .member-link:hover {
+            color: #667eea;
+        }
+
+        
+         .info-value {
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+
+
+/*diseño del main.html*/
+
+
+         .member-main {
+            text-align: center;
+            display: block;
+            padding: 15px 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .member-main:hover {
+            color: #667eea;
+        }
+    </style>
+
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    {% block content %}
+{% endblock %}
+        
+        
+
+
+</body>
+</html>
